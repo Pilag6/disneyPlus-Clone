@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Coco = (props) => {
     return (
         <Container>
@@ -25,7 +29,7 @@ const Coco = (props) => {
                 <Controls>
                     <Player>
                         <img
-                            src="../src/assets/images/play-icon-black.png"
+                            src={PlayIconBlack}
                             alt=""
                         />
                         <span>Play</span>
@@ -33,7 +37,7 @@ const Coco = (props) => {
                     <Link to="https://www.disneyplus.com/en-gb/video/9ef66ac5-f3f2-4abe-bef4-7b474f917316">
                         <Trailer>
                             <img
-                                src="../src/assets/images/play-icon-white.png"
+                                src={PlayIconWhite}
                                 alt=""
                             />
                             <span>Trailer</span>
@@ -46,7 +50,7 @@ const Coco = (props) => {
                     <GroupWatch>
                         <div>
                             <img
-                                src="../src/assets/images/group-icon.png"
+                                src={GroupIcon}
                                 alt=""
                             />
                         </div>

@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Luca = (props) => {
     return (
         <Container>
@@ -24,12 +28,12 @@ const Luca = (props) => {
             <ContentMeta>
                 <Controls>
                     <Player>
-                        <img src="../src/assets/images/play-icon-black.png" alt="" />
+                        <img src={PlayIconBlack} alt="" />
                         <span>Play</span>
                     </Player>
                     <Link to="https://www.disneyplus.com/en-gb/video/7d03a6da-2763-404f-8328-7a858a0793b0">
                         <Trailer>
-                            <img src="../src/assets/images/play-icon-white.png" alt="" />
+                            <img src={PlayIconWhite} alt="" />
                             <span>Trailer</span>
                         </Trailer>
                     </Link>
@@ -39,7 +43,7 @@ const Luca = (props) => {
                     </AddList>
                     <GroupWatch>
                         <div>
-                            <img src="../src/assets/images/group-icon.png" alt="" />
+                            <img src={GroupIcon} alt="" />
                         </div>
                     </GroupWatch>
                 </Controls>

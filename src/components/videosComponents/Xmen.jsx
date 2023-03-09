@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Xmen = (props) => {
     return (
         <Container>
@@ -24,12 +28,12 @@ const Xmen = (props) => {
             <ContentMeta>
                 <Controls>
                     <Player>
-                        <img src="../src/assets/images/play-icon-black.png" alt="" />
+                        <img src={PlayIconBlack} alt="" />
                         <span>Play</span>
                     </Player>
                     <Link to="https://www.disneyplus.com/en-gb/video/03d9dd33-bcf6-4a38-8f6a-9ff20438727a">
                         <Trailer>
-                            <img src="../src/assets/images/play-icon-white.png" alt="" />
+                            <img src={PlayIconWhite} alt="" />
                             <span>Trailer</span>
                         </Trailer>
                     </Link>
@@ -39,7 +43,7 @@ const Xmen = (props) => {
                     </AddList>
                     <GroupWatch>
                         <div>
-                            <img src="../src/assets/images/group-icon.png" alt="" />
+                            <img src={GroupIcon} alt="" />
                         </div>
                     </GroupWatch>
                 </Controls>

@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Family = (props) => {
     return (
         <Container>
@@ -25,7 +29,7 @@ const Family = (props) => {
                 <Controls>
                     <Player>
                         <img
-                            src="../src/assets/images/play-icon-black.png"
+                            src={PlayIconBlack}
                             alt=""
                         />
                         <span>Play</span>
@@ -43,7 +47,7 @@ const Family = (props) => {
                     <GroupWatch>
                         <div>
                             <img
-                                src="../src/assets/images/group-icon.png"
+                                src={GroupIcon}
                                 alt=""
                             />
                         </div>

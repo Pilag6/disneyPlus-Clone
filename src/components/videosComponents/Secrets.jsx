@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Secrets = (props) => {
 
     return (
@@ -19,12 +23,12 @@ const Secrets = (props) => {
             <ContentMeta>
                 <Controls>
                     <Player>
-                        <img src="../src/assets/images/play-icon-black.png" alt="" />
+                        <img src={PlayIconBlack} alt="" />
                         <span>Play</span>
                     </Player>
                     <Link to="https://www.disneyplus.com/en-gb/video/1418572a-d336-4c68-a4b7-e2a8c249edc7">
                         <Trailer>
-                            <img src="../src/assets/images/play-icon-white.png" alt="" />
+                            <img src={PlayIconWhite} alt="" />
                             <span>Trailer</span>
                         </Trailer>
                     </Link>
@@ -34,7 +38,7 @@ const Secrets = (props) => {
                     </AddList>
                     <GroupWatch>
                         <div>
-                            <img src="../src/assets/images/group-icon.png" alt="" />
+                            <img src={GroupIcon} alt="" />
                         </div>
                     </GroupWatch>
                 </Controls>

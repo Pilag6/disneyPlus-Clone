@@ -1,36 +1,43 @@
 import styled from "styled-components";
+import LogoHeader from '../assets/images/LogoHeader.svg'
+import HomeIcon from '../assets/images/home-icon.svg'
+import SearchIcon from '../assets/images/search-icon.svg'
+import WatchListIcon from '../assets/images/watchlist-icon.svg'
+import OriginalIcon from '../assets/images/original-icon.svg'
+import MoviesIcon from '../assets/images/movie-icon.svg'
+import SeriesIcon from '../assets/images/series-icon.svg'
 
 
 const Header = (props) => {
     return (
         <Nav>
             <Logo href="/">
-                <img src="../src/assets/images/LogoHeader.svg" alt="Disney+" />
+                <img src={LogoHeader} alt="Disney+" />
             </Logo>
 
             <NavMenu>
                 <a href="/home" alt="Home">
-                    <img src="../src/assets/images/home-icon.svg" alt="Home" />
+                    <img src={HomeIcon} alt="Home" />
                     <span>HOME</span>
                 </a>
                 <a href="/#">
-                    <img src="../src/assets/images/search-icon.svg" alt="SEARCH" />
+                    <img src={SearchIcon} alt="SEARCH" />
                     <span>SEARCH</span>
                 </a>
                 <a href="/#">
-                    <img src="../src/assets/images/watchlist-icon.svg" alt="WATCHLIST" />
+                    <img src={WatchListIcon} alt="WATCHLIST" />
                     <span>WATCHLIST</span>
                 </a>
                 <a href="/home/#original">
-                    <img src="../src/assets/images/original-icon.svg" alt="ORIGINALS" />
+                    <img src={OriginalIcon} alt="ORIGINALS" />
                     <span>ORIGINALS</span>
                 </a>
                 <a href="/#">
-                    <img src="../src/assets/images/movie-icon.svg" alt="MOVIES" />
+                    <img src={MoviesIcon} alt="MOVIES" />
                     <span>MOVIES</span>
                 </a>
                 <a href="/#">
-                    <img src="../src/assets/images/series-icon.svg" alt="SERIES" />
+                    <img src={SeriesIcon} alt="SERIES" />
                     <span>SERIES</span>
                 </a>
             </NavMenu>

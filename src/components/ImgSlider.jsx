@@ -3,6 +3,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import Wakanda from '../assets/images/wakanda.jpg'
+import Mandalorian from '../assets/images/mandalorian.jpg'
+import Onward from '../assets/images/slider-badag.jpg'
+import Coco from '../assets/images/coco.jpg'
+import Twd from '../assets/images/twd.jpg'
+import Soul from '../assets/images/soul.jpg'
+
+
 const ImgSlider = (props) => {
     let settings = {
         dots: true,
@@ -16,37 +24,37 @@ const ImgSlider = (props) => {
         <Carousel {...settings}>
             <Wrap>
                 <a href="/panther">
-                    <img src="../src/assets/images/wakanda.jpg" alt="" />
+                    <img src={Wakanda} alt="" />
                 </a>
             </Wrap>
 
             <Wrap>
                 <a href="/mandalorian">
-                    <img src="../src/assets/images/mandalorian.jpg" alt="" />
+                    <img src={Mandalorian} alt="" />
                 </a>
             </Wrap>
 
             <Wrap>
                 <a href="/onward">
-                    <img src="../src/assets/images/slider-badag.jpg" alt="" />
+                    <img src={Onward} alt="" />
                 </a>
             </Wrap>
 
             <Wrap>
                 <a href="/coco">
-                    <img src="../src/assets/images/coco.jpg" alt="" />
+                    <img src={Coco} alt="" />
                 </a>
             </Wrap>
 
             <Wrap>
                 <a href="/twd">
-                    <img src="../src/assets/images/twd.jpg" alt="" />
+                    <img src={Twd} alt="" />
                 </a>
             </Wrap>
 
             <Wrap>
                 <a href="/soul">
-                    <img src="../src/assets/images/soul.jpg" alt="" />
+                    <img src={Soul} alt="" />
                 </a>
             </Wrap>
         </Carousel>

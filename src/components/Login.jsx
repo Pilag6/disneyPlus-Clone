@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import MainLogo from '../assets/images/hulu-disney-espn+.svg'
+import SecondaryLogo from '../assets/images/disney-pixar-marvel-sw-ng.png'
+import BgLogin from '../assets/images/login-background.jpg'
 
 const Login = (props) => {
     return (
@@ -8,7 +11,7 @@ const Login = (props) => {
             <Content>
                 <CTA>
                     <CTALogoOne
-                        src="../src/assets/images/hulu-disney-espn+.svg"
+                        src={MainLogo}
                         alt="Disney Logo"
                     />
                     <Subtitle>+ More than you'd ever imagine</Subtitle>
@@ -23,7 +26,7 @@ const Login = (props) => {
                         monthly.
                     </Description>
                     <CTALogoTwo
-                        src="../src/assets/images/disney-pixar-marvel-sw-ng.png"
+                        src={SecondaryLogo}
                         alt="Disney Pixar Marvel Star Wars National Geographic"
                     />
                 </CTA>
@@ -60,7 +63,7 @@ const BgImage = styled.div`
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../src/assets/images/login-background.jpg");
+    background-image: url(${BgLogin});
     position: absolute;
     top: 0;
     right: 0;

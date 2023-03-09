@@ -5,6 +5,10 @@ import NewDisney from "../NewDisney";
 import Originals from "../Originals";
 import Trendings from "../Trending";
 
+import PlayIconBlack from '../../assets/images/play-icon-black.png'
+import PlayIconWhite from '../../assets/images/play-icon-white.png'
+import GroupIcon from '../../assets/images/group-icon.png'
+
 const Onward = (props) => {
     return (
         <Container>
@@ -25,7 +29,7 @@ const Onward = (props) => {
                 <Controls>
                     <Player>
                         <img
-                            src="../src/assets/images/play-icon-black.png"
+                            src={PlayIconBlack}
                             alt=""
                         />
                         <span>Play</span>
@@ -33,7 +37,7 @@ const Onward = (props) => {
                     <Link to="https://www.disneyplus.com/en-gb/video/0000a2cb-1191-444b-98e7-d4183dac4925">
                         <Trailer>
                             <img
-                                src="../src/assets/images/play-icon-white.png"
+                                src={PlayIconWhite}
                                 alt=""
                             />
                             <span>Trailer</span>
@@ -46,7 +50,7 @@ const Onward = (props) => {
                     <GroupWatch>
                         <div>
                             <img
-                                src="../src/assets/images/group-icon.png"
+                                src={GroupIcon}
                                 alt=""
                             />
                         </div>
