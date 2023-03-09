@@ -6,6 +6,9 @@
   <br />
 
   <h2 align="center">DISNEY+ CLONE</h2>
+  
+[image](https://user-images.githubusercontent.com/79191808/224155306-51d6d11d-678e-43f5-9a10-aae8e1b6fcdc.png)
+
 
   # React.JS | Disney Plus Clone by Pila Gonzalez
   
