@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+import { Link } from "react-router-dom";
+
 import Wakanda from '../assets/images/wakanda.jpg'
 import Mandalorian from '../assets/images/mandalorian.jpg'
 import Onward from '../assets/images/slider-badag.jpg'
@@ -23,39 +25,39 @@ const ImgSlider = (props) => {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <a href="/panther">
+                <Link to="/panther">
                     <img src={Wakanda} alt="" />
-                </a>
+                </Link>
             </Wrap>
 
             <Wrap>
-                <a href="/mandalorian">
+                <Link to="/mandalorian">
                     <img src={Mandalorian} alt="" />
-                </a>
+                </Link>
             </Wrap>
 
             <Wrap>
-                <a href="/onward">
+                <Link to="/onward">
                     <img src={Onward} alt="" />
-                </a>
+                </Link>
             </Wrap>
 
             <Wrap>
-                <a href="/coco">
+                <Link to="/coco">
                     <img src={Coco} alt="" />
-                </a>
+                </Link>
             </Wrap>
 
             <Wrap>
-                <a href="/twd">
+                <Link to="/twd">
                     <img src={Twd} alt="" />
-                </a>
+                </Link>
             </Wrap>
 
             <Wrap>
-                <a href="/soul">
+                <Link to="/soul">
                     <img src={Soul} alt="" />
-                </a>
+                </Link>
             </Wrap>
         </Carousel>
     );

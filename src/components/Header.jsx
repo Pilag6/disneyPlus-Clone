@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import LogoHeader from '../assets/images/LogoHeader.svg'
-import HomeIcon from '../assets/images/home-icon.svg'
-import SearchIcon from '../assets/images/search-icon.svg'
-import WatchListIcon from '../assets/images/watchlist-icon.svg'
-import OriginalIcon from '../assets/images/original-icon.svg'
-import MoviesIcon from '../assets/images/movie-icon.svg'
-import SeriesIcon from '../assets/images/series-icon.svg'
+import LogoHeader from "../assets/images/LogoHeader.svg";
+import HomeIcon from "../assets/images/home-icon.svg";
+import SearchIcon from "../assets/images/search-icon.svg";
+import WatchListIcon from "../assets/images/watchlist-icon.svg";
+import OriginalIcon from "../assets/images/original-icon.svg";
+import MoviesIcon from "../assets/images/movie-icon.svg";
+import SeriesIcon from "../assets/images/series-icon.svg";
 
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
     return (
@@ -16,10 +17,10 @@ const Header = (props) => {
             </Logo>
 
             <NavMenu>
-                <a href="/home" alt="Home">
+                <Link to="/home" alt="Home">
                     <img src={HomeIcon} alt="Home" />
                     <span>HOME</span>
-                </a>
+                </Link>
                 <a href="/#">
                     <img src={SearchIcon} alt="SEARCH" />
                     <span>SEARCH</span>
@@ -28,10 +29,10 @@ const Header = (props) => {
                     <img src={WatchListIcon} alt="WATCHLIST" />
                     <span>WATCHLIST</span>
                 </a>
-                <a href="/home/#original">
+                <Link to="/home/#original">
                     <img src={OriginalIcon} alt="ORIGINALS" />
                     <span>ORIGINALS</span>
-                </a>
+                </Link>
                 <a href="/#">
                     <img src={MoviesIcon} alt="MOVIES" />
                     <span>MOVIES</span>
@@ -41,7 +42,9 @@ const Header = (props) => {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <Login href="/home">Login</Login>
+            <Login>
+                <Link to="/home">Login</Link>
+            </Login>
             {/* <SignUp>Sign Up</SignUp> */}
         </Nav>
     );
@@ -145,11 +148,11 @@ const Login = styled.a`
     border-radius: 4px;
     transition: all 0.2s ease 0s;
     cursor: pointer;
-    &:hover {
+    /* &:hover {
         background-color: #f9f9f9;
         color: #000;
         border-color: transparent;
-    }
+    } */
 `;
 
 // const SignUp = styled.a`
