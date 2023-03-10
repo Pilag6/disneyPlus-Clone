@@ -42,17 +42,11 @@ function App() {
                         <Route path="/onward" element={<Onward />}></Route>
                         <Route path="/xmen" element={<Xmen />}></Route>
                         <Route path="/obiwan" element={<Obi />}></Route>
-                        <Route
-                            path="/pinocchio"
-                            element={<Pinocchio />}
-                        ></Route>
+                        <Route path="/pinocchio" element={<Pinocchio />}></Route>
 
                         <Route path="/panther" element={<Panther />}></Route>
                         <Route path="/prey" element={<Prey />}></Route>
-                        <Route
-                            path="/lightyear"
-                            element={<Lightyear />}
-                        ></Route>
+                        <Route path="/lightyear" element={<Lightyear />}></Route>
                         <Route path="/family" element={<Family />}></Route>
 
                         <Route path="/loki" element={<Loki />}></Route>
@@ -62,10 +56,7 @@ function App() {
 
                         <Route path="/toystory" element={<Toy />}></Route>
                         <Route path="/avengers" element={<Avengers />}></Route>
-                        <Route
-                            path="/mandalorian"
-                            element={<Mandalorian />}
-                        ></Route>
+                        <Route path="/mandalorian" element={<Mandalorian />}></Route>
                         <Route path="/simpsons" element={<Simpsons />}></Route>
 
                         <Route path="/coco" element={<Coco />}></Route>
